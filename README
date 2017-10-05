@@ -1,4 +1,4 @@
-This is your new Play application
+This is a practice example from Manning Play For Java
 =====================================
 
-This file will be packaged with your application, when using `play dist`.
+Modified example of the book. CRUD product list. 
