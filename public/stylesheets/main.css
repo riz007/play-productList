@@ -1,11 +1,17 @@
+@import
+
 .btn {
     cursor: pointer;
 }
 
 ul li {
-     list-style-type: none;
+    list-style-type: none;
 }
 
 .container {
     margin-top: 50px;
+}
+
+.icon-delete {
+    padding: 20px;
 }

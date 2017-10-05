@@ -3,12 +3,21 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
+#GET     /                           controllers.Application.index()
 
 # Tasks
 GET     /tasks                      controllers.Application.tasks()
 POST    /tasks                      controllers.Application.newTask()
 POST    /tasks/:id/delete           controllers.Application.deleteTask(id: Long)
+
+#Adding routes for product catalog
+
+GET     /                           controllers.Products.list()
+GET     /products/                  controllers.Products.list()
+GET     /products/new               controllers.Products.newProduct()
+GET     /products/:ean              controllers.Products.details(ean: String)
+POST    /products/                  controllers.Products.save()
+DELETE  /products/:ean              controllers.Products.delete(ean: String)
 
 
 
